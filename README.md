@@ -6,3 +6,6 @@ Change the loops of any selected source in the project panel without touching ot
 
 ### ab-maskToLastSelected.jsx
 Apply the Set Matte effect to all selected layers and set the last selected layer as mask.
+
+### ab-parentToLastSelected.jsx
+Easily select your layers in the viewport and link them with this script to the last selected layer. No need to pick whip or scroll long layer dropdown lists.
