@@ -9,3 +9,6 @@ Apply the Set Matte effect to all selected layers and set the last selected laye
 
 ### ab-parentToLastSelected.jsx
 Easily select your layers in the viewport and link them with this script to the last selected layer. No need to pick whip or scroll long layer dropdown lists.
+
+### ab-selectAllUnParented.jsx
+This script helps you to select all layers in your current composition that have no parent. Useful for linking all layers to a new master null without loosing your parent child chain.
