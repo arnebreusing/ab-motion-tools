@@ -6,7 +6,7 @@
 
 parentToLastSelected(this);
 
-/* mask the selected layers to the last selected
+/* parent the selected layers to the last selected
 */
 function parentToLastSelected(thisObj) {
 
