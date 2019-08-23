@@ -4,12 +4,15 @@
 A collection of Motion Graphics Scripts for Adobe After Effects
 
 ## Icons
-You can find corresponding icons for all scripts in the _icons subfolder as PNG (1x) or SVG (best for adjusting colors).
+You can find corresponding icons for all scripts in the icons subfolder as PNG (1x) or SVG (best for adjusting colors).
 
 ## Contained Scripts
 
 ### ab-changeLoop.jsx
 Change the loops of any selected source in the project panel without touching other settings like alpha mode or framerate. Helpful for looping imported gifs in After Effects.
+
+### ab-deselectChilds.jsx
+Deselects all currently selected layers in your composition that already have a parent. Works very similar to selectAllUnParented.jsx but does not completely destroy your previous selection (e.g. via label selection).
 
 ### ab-maskToLastSelected.jsx
 Apply the Set Matte effect to all selected layers and set the last selected layer as mask.
