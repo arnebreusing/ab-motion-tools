@@ -1,5 +1,12 @@
+![ab_motion-tools_001-header](https://user-images.githubusercontent.com/48606207/63626945-934ddb00-c605-11e9-9627-a269eb9ec507.png)
+
 # AB Motion Tools
 A collection of Motion Graphics Scripts for Adobe After Effects
+
+## Icons
+You can find corresponding icons for all scripts in the _icons subfolder as PNG (1x) or SVG (best for adjusting colors).
+
+## Contained Scripts
 
 ### ab-changeLoop.jsx
 Change the loops of any selected source in the project panel without touching other settings like alpha mode or framerate. Helpful for looping imported gifs in After Effects.
