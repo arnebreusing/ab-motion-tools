@@ -1,7 +1,7 @@
 /***************************************************************************
  * Deselects selected layers that have a parent ****************************
  * by Arne Breusing @dezignphreak ******************************************
- * version: 0.2 ************************************************************
+ * version: 0.3 ************************************************************
  ***************************************************************************/
 
 deselectChilds(this);
@@ -12,9 +12,7 @@ function deselectChilds(thisObj) {
 
   var myComp = app.project.activeItem;
 
-  if (myComp == null) {
-    alert("Please select a composition first.")
-  } else {
+  if (myComp && myComp instanceof CompItem) {
 
     var mySelection = myComp.selectedLayers;
     var myNumLayers = mySelection.length;
@@ -34,7 +32,8 @@ function deselectChilds(thisObj) {
     } else {
       alert("Please select a layer first.");
     }
-
+  } else {
+    alert("Please select a composition first.")
   }
 
 };

@@ -1,7 +1,7 @@
 /***************************************************************************
  * Select all layers without a parent **************************************
  * by Arne Breusing @dezignphreak ******************************************
- * version: 0.1 ************************************************************
+ * version: 0.2 ************************************************************
  ***************************************************************************/
 
 selectAllUnParented(this);
@@ -12,7 +12,7 @@ function selectAllUnParented(thisObj) {
 
   var myComp = app.project.activeItem;
 
-  if (myComp != null) {
+  if (myComp && myComp instanceof CompItem) {
 
     for (var i = 1; i <= myComp.layers.length; i++) {
       if (myComp.layer(i).parent != null) {
