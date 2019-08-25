@@ -14,6 +14,9 @@ Change the loops of any selected source in the project panel without touching ot
 ### ab-deselectChilds.jsx
 Deselects all currently selected layers in your composition that already have a parent. Works very similar to selectAllUnParented.jsx but does not completely destroy your previous selection (e.g. via label selection).
 
+### ab-makeGrid.jsx
+Automatically split up a layer into a grid. More infos: https://tmblr.co/ZJNKTy2kPplpZ
+
 ### ab-maskToLastSelected.jsx
 Apply the Set Matte effect to all selected layers and set the last selected layer as mask.
 
