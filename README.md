@@ -14,6 +14,10 @@ Change the loops of any selected source in the project panel without touching ot
 ### ab-deselectChilds.jsx
 Deselects all currently selected layers in your composition that already have a parent. Works very similar to selectAllUnParented.jsx but does not completely destroy your previous selection (e.g. via label selection).
 
+### ab-keepStrokeWidth.jsx
+Applies to all strokes* of selected shape layers the maintain stroke width expression and asks for a new stroke width.
+\*only on first level
+
 ### ab-makeGrid.jsx
 Automatically split up a layer into a grid. More infos: https://tmblr.co/ZJNKTy2kPplpZ
 
