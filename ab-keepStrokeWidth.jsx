@@ -6,7 +6,7 @@
 
 keepStrokeWidth(this);
 
-/* mask the selected layers to the last selected
+/* apply the maintain stroke width expression to all strokes of the selected shape layers on the first level and ask for a new stroke width
 */
 function keepStrokeWidth(thisObj) {
 
