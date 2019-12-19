@@ -1,7 +1,7 @@
 /***************************************************************************
  * Keep stroke width *******************************************************
  * by Arne Breusing @dezignphreak ******************************************
- * version: 0.1 ************************************************************
+ * version: 0.2 ************************************************************
  ***************************************************************************/
 
 keepStrokeWidth(this);
@@ -32,7 +32,7 @@ function keepStrokeWidth(thisObj) {
           var myContents = mySelection[i].property('ADBE Root Vectors Group');
           for (var j = 1; j <= myContents.numProperties; j++) { // loop through first level of subgroups of the shape layer
 
-            if (myContents.property(j).numProperties < 2) { // check if property is group
+            if (myContents.property(j).matchName == 'ADBE Vector Group') { // check if property is group
               if (myContents.property(j).property('ADBE Vectors Group').property('ADBE Vector Graphic - Stroke') != null) {
                 var myStrokeWidth = myContents.property(j).property('ADBE Vectors Group').property('ADBE Vector Graphic - Stroke').property('ADBE Vector Stroke Width');
                 if (newStrokeWidth != null) { // set stroke width to new stroke width if user has put in a new value
