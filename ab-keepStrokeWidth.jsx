@@ -35,7 +35,9 @@ function keepStrokeWidth(thisObj) {
             if (myContents.property(j).matchName == 'ADBE Vector Group') { // check if property is group
               if (myContents.property(j).property('ADBE Vectors Group').property('ADBE Vector Graphic - Stroke') != null) {
                 var myStrokeWidth = myContents.property(j).property('ADBE Vectors Group').property('ADBE Vector Graphic - Stroke').property('ADBE Vector Stroke Width');
-                if (newStrokeWidth != null) { // set stroke width to new stroke width if user has put in a new value
+                if (newStrokeWidth == null || newStrokeWidth == '' || newStrokeWidth == undefined) { // set stroke width to new stroke width if user has put in a new value
+                  
+                } else {
                   myStrokeWidth.setValue(newStrokeWidth);
                 }
                 myStrokeWidth.expression = myExpression;
@@ -54,7 +56,7 @@ function keepStrokeWidth(thisObj) {
         myLayernames.push(mySelection[i].name);
       }
 
-    alert("The stroke of the following layers has been adjusted:\n\n" + myLayernames.join("\n"));
+    //alert("The stroke of the following layers has been adjusted:\n\n" + myLayernames.join("\n"));
 
     } else {
       alert("Please select a layer first first.");
