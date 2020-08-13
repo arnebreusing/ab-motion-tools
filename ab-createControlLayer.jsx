@@ -25,11 +25,16 @@ function createControlLayer(thisObj) {
     if (mySelection.length >= 1) {
 
       for (var i = 0; i < mySelection.length; i++) {
-        var myCon = createHandle("con_" + mySelection[i].name, mySelection[i].position.value, myConColor, mySelection[i]);
+        var myLayerPos = mySelection[i].position.value;
+        var myCon = createHandle("con_" + mySelection[i].name, myLayerPos, myConColor, mySelection[i]);
+        myCon.transform.scale.setValue(mySelection[i].transform.scale.value);
         myCon.startTime = mySelection[i].startTime;
         myCon.inPoint = mySelection[i].inPoint;
         myCon.outPoint = mySelection[i].outPoint;
         myCon.label = mySelection[i].label;
+        if (mySelection[i].parent != undefined) {
+          myCon.setParentWithJump(mySelection[i].parent);
+        }
         mySelection[i].parent = myCon;
         myLayernames.push(mySelection[i].name);
       }
@@ -82,7 +87,7 @@ function createHandle(handleName, handlePosition, handleColor, moveBefore){
   handleStrokeOffset.setValue(15);
   handleGroup.property("ADBE Vector Transform Group").property("ADBE Vector Rotation").setValue(45);
   //prevent anoying scaling of handle in viewport
-  handle.property("ADBE Transform Group").property("ADBE Scale").expression = "[100,100]";
+  // handle.property("ADBE Transform Group").property("ADBE Scale").expression = "[100,100]";
   //position handle
   handle.property("ADBE Transform Group").property("ADBE Position").setValue(handlePosition);
   //colaps layer content in timeline
