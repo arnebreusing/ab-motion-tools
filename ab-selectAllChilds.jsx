@@ -1,7 +1,7 @@
 /***************************************************************************
  * Select all child layers of a selected parent layer **********************
  * by Arne Breusing @dezignphreak ******************************************
- * version: 0.1 ************************************************************
+ * version: 0.2 ************************************************************
  ***************************************************************************/
 
 selectAllChilds(this);
@@ -32,7 +32,15 @@ function selectAllChilds(thisObj) {
           myComp.layer(i).selected = false;
         }
       }
-      myParent.selected = false;
+
+      // execution successfull
+      if (myComp.selectedLayers.length > 1) {
+        myParent.selected = false;
+      } else {
+        myParent.selected = true;
+        alert(myParent.name + " had no child layers.");
+      }
+
     } else {
       alert("Please select a layer first.");
     }
