@@ -8,7 +8,7 @@
 changeRenderVersion(this);
 
 // This script prompts the user for a appendix to use for queued items in the Render Queue.
-function changeRenderVersion(thisObj)	{
+function changeRenderVersion(thisObj){
   var scriptName = "Change Render Version";
 
   var myProject = app.project.file.toString();

@@ -92,9 +92,7 @@ function createHandle(handleName, handlePosition, handleColor, moveBefore){
   handle.property("ADBE Transform Group").property("ADBE Position").setValue(handlePosition);
   //colaps layer content in timeline
   handle.selected = true;
-  if(app.settings.getSetting('RigtRect', 'SeparateDimensions') == 'true'){
-    handle.transform.position.dimensionsSeparated = true;
-  }
+  handle.transform.position.dimensionsSeparated = true;
   app.executeCommand(2771);
   app.executeCommand(2771);
   if(moveBefore){
