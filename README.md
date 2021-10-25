@@ -11,7 +11,7 @@ You can find corresponding icons for all scripts in the icons subfolder as PNG (
 ### [ab-applyTextname.jsx](ab-applyTextname.jsx)
 Sometimes it's quiet handy when the text of a textlayer is linked to its name, so you can rename the layer and the text changes accordingly. This script helps to build the setup by applying the corresponding expression to the text source property of all selected textlayers.
 
-### [ab-changeLoop.jsx](ab-changeLoop.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/changeLoop.png' width='30'> ab-changeLoop.jsx](ab-changeLoop.jsx)
 Change the loops of any selected source in the project panel without touching other settings like alpha mode or framerate. Helpful for looping imported gifs in After Effects.
 
 ### [ab-changeRenderVersion.jsx](ab-changeRenderVersion.jsx)
@@ -23,23 +23,23 @@ Select one or more layers in the timeline and run the script. It will create a n
 ### [ab-deselectChilds.jsx](ab-deselectChilds.jsx)
 Deselects all currently selected layers in your composition that already have a parent. Works very similar to selectAllUnParented.jsx but does not completely destroy your previous selection (e.g. via label selection).
 
-### [ab-keepStrokeWidth.jsx](ab-keepStrokeWidth.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/keepStrokeWidth.png' width='30'> ab-keepStrokeWidth.jsx](ab-keepStrokeWidth.jsx)
 Applies to all strokes* of selected shape layers the maintain stroke width expression and asks for a new stroke width.
 \*only on first level
 
-### [ab-makeGrid.jsx](ab-makeGrid.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/makeGrid.png' width='30'> ab-makeGrid.jsx](ab-makeGrid.jsx)
 Automatically split up a layer into a grid. More infos: https://tmblr.co/ZJNKTy2kPplpZ
 
-### [ab-maskToLastSelected.jsx](ab-maskToLastSelected.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/maskToLastSelected.png' width='30'> ab-maskToLastSelected.jsx](ab-maskToLastSelected.jsx)
 Apply the Set Matte effect to all selected layers and set the last selected layer as mask.
 
-### [ab-parentToLastSelected.jsx](ab-parentToLastSelected.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/parentToLastSelected.png' width='30'> ab-parentToLastSelected.jsx](ab-parentToLastSelected.jsx)
 Easily select your layers in the viewport and link them with this script to the last selected layer. No need to pick whip or scroll long layer dropdown lists.
 
 ### [ab-selectAllChilds.jsx](ab-selectAllChilds.jsx)
 Just select your parent layer, run the script and get all layers selected, which are linked (parented) to your first selected layer. Useful if you want to unlink or relink to a different layer.
 
-### [ab-selectAllUnParented.jsx](ab-selectAllUnParented.jsx)
+### [<img src='https://github.com/arnebreusing/ab-motion-tools/blob/master/_icons/1x/selectAllUnParented.png' width='30'> ab-selectAllUnParented.jsx](ab-selectAllUnParented.jsx)
 This script helps you to select all layers in your current composition that have no parent. Useful for linking all layers to a new master null without loosing your parent child chain.
 
 ### [ab-toggleGuideLayers.jsx](ab-toggleGuideLayers.jsx)
