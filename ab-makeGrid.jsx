@@ -62,6 +62,14 @@ function makeGrid(thisObj) {
 
     // begin making the grid layout
     app.beginUndoGroup("Make Grid");
+    var pos = myLayer.position;
+    if (pos.isSeparationSupported && pos.dimensionsSeparated) {
+        pos.property("X Position").setValue(layerPos[0][0]);
+        pos.property("Y Position").setValue(layerPos[0][1]);
+        if (layerPos.length > 2) pos.property("Z Position").setValue(layerPos[0][2]);
+    } else {
+        pos.setValue(layerPos[0]);
+    }
     myLayer.position.setValue(layerPos[0]);
     myLayer.scale.setValue(gridScale);
     // adding and removing keyframes and markers
